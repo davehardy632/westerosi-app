@@ -18,6 +18,4 @@ class WesterosiApiService
   private
   attr_reader :house_name
 
-
-
 end

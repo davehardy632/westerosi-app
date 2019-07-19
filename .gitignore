@@ -12,6 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/spec/casettes
 
 # Ignore uploaded files in development
 /storage/*
