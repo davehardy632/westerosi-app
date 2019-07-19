@@ -9,8 +9,6 @@ class WesterosiApiService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  private
-
   def conn
     Faraday.new(url: "http://westerosapi.herokuapp.com/api/v1/house/#{house_name}?api_key=#{ENV["API_KEY"]}") do |faraday|
       faraday.adapter Faraday.default_adapter
