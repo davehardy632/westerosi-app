@@ -24,7 +24,7 @@
         <ul class="nav navbar-nav">
           <%= form_tag :search, method: :get, class: "form-inline" do %>
             <div class="form-group search-field">
-              <%= select_tag :state, options_for_select(houses) %>
+              <%= select_tag :house, options_for_select(houses) %>
               <%= submit_tag "Get Members", class: "btn btn-primary" %>
             </div>
           <% end %>

@@ -8,13 +8,13 @@ describe "As a user, visiting root path" do
       visit "/"
       # ```As a user
       # When I visit "/"
-      select "Greyjoy", from: :houses
+      select "Greyjoy", from: :house
       # And I select "Greyjoy" from the dropdown
       click_on "Get Members"
       # And I click on "Get Members"
       expect(current_path).to eq(search_path)
       # Then my path should be "/search" with "house=greyjoy" in the parameters
-      expect(page).to have_content("7 Results")
+      expect(page).to have_content("7 Members")
       # And I should see a message "7 Members"
       expect(page).to have_css(".member", count: 7)
       # And I should see a list of 7 the members of the house for Colorado
